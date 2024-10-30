@@ -1,0 +1,111 @@
+/* Typography */
+@font-face {
+  font-family: sans-serif;
+  src: url('');
+}
+@font-face {
+  font-family: '';
+  src: url('');
+}
+@font-face {
+  font-family: '';
+  src: url('');
+}
+@font-face {
+  font-family:'';
+  src: url('');
+}
+@font-face {
+  font-family:'';
+  src: url('');
+}
+body{
+    font-family: sans-serif;
+}
+
+/*display */
+$flexs: flex, inline-flex;
+
+@each $flex in $flexs {
+    .d-#{$flex} {
+        display: $flex;
+    }
+}
+
+/*flex-direction */
+$directions: row, row-reverse, column, column-reverse;
+
+@each $direction in $directions {
+    .flex-#{$direction} {
+        flex-direction: $direction;
+    }
+}
+
+/*justify-content */
+$justifys: flex-start, center, flex-end, space-between, space-around, space-evenly;
+
+@each $justify in $justifys {
+    .justify-#{$justify} {
+        justify-content: $justify;
+    }
+}
+
+/*align-content */
+$aligns: flex-start, center, flex-end, space-between, space-around, space-evenly;
+
+@each $align in $aligns {
+    .align-#{$align} {
+        align-content: $align;
+    }
+}
+
+/*align-items */
+$aligns1: flex-start, center, flex-end;
+
+@each $align1 in $aligns1 {
+    .items-#{$align1} {
+        align-items: $align1;
+    }
+}
+/*flex-wrap */
+$wraps: nowrap, wrap, wrap-reverse;
+
+@each $wrap in $wraps {
+    .flex-#{$wrap} {
+        flex-wrap: $wrap;
+    }
+}
+/*font-weight */
+$weights: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+
+@each $weight in $weights {
+    .fw-#{$weight} {
+        font-weight: $weight;
+    }
+}
+/*text-transform */
+$transforms: uppercase, lowercase, capitalize;
+
+@each $transform in $transforms {
+    .text-#{$transform} {
+        text-transform: $transform;
+    }
+}
+
+/*text-align */
+$aligns: left, center, right, justify;
+
+@each $align in $aligns {
+    .text-#{$align} {
+        text-align: $align;
+    }
+}
+
+/*position */
+$positions: fixed, static, relative, absolute;
+
+@each $position in $positions {
+    .position-#{$position} {
+        position: $position;
+    }
+}

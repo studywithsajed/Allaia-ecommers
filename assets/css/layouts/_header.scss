@@ -1,0 +1,113 @@
+/*Header Top*/
+.header-top-area {
+	background: $sky-blue;
+	padding: 20px;
+  .menu{
+    .menu-item{
+        .small-menu{
+          position: absolute;
+          background: $gray-white;
+          top:0;
+          left: 0;
+          padding: 20px;
+          width: 200px;
+          visibility: hidden;
+          opacity: 0;
+          z-index: 99;
+          transition: .3s;
+          box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+          li{
+            margin-top: 15px;
+            a{
+              color: $gray-black ;
+              &:hover{
+                color: $sky-blue;
+              }
+            }
+          }
+        }
+        
+      .big-dropdown {
+          position: absolute;
+          background: $gray-white;
+          top:0;
+          left: 0;
+          padding: 40px;
+          visibility: hidden;
+          opacity: 0;
+          z-index: 99;
+          transition: .3s;
+          box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+          margin:  0 -343px 100px;
+          width: 760px;
+          ul {
+            width: 129px;
+              li{
+              margin-top: 20px;
+              a{
+                color: $gray-black;
+                &:hover{
+                  color: $sky-blue;
+                }
+              }
+            }
+          }
+          
+          .menu-img {
+              width: 176px;
+              margin-left: 15px;
+              cursor: pointer;
+            }
+        }
+        &:hover .big-dropdown, &:hover .small-menu{
+          visibility: visible;
+          opacity: 1;
+          top: 46px;
+          transition: .3s;
+        }
+      a{
+        position: relative;
+        color: $white;
+      }
+    }
+    .angle-down{
+      &::after {
+      position: absolute;
+      content: "\f107";
+      font-family: fontawesome;
+      top: -3px;
+      right: -21px;
+      color: $white;
+    }
+    
+    }
+  }
+  .contact-head{
+    a {
+      display: inline-block;
+      color: $white;
+      span{
+        display: block;
+      }
+    }
+  }
+}
+
+/* Main Header */
+.header-area{
+  background: $white;
+	box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+  .search-box{
+    &::after {
+      position: absolute;
+      content: '\f002';
+      font-family: fontawesome;
+    }
+  }
+}
+
+
+.header-area {
+	background: #fff;
+	box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}

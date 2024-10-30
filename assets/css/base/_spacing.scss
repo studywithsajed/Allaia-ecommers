@@ -1,0 +1,74 @@
+/* Margin & Padding */
+
+@for $i from 1 through 10 {
+  .mt-#{$i * 10} {
+    margin-top: 10px * $i;
+  }
+
+  .me-#{$i * 10} {
+    margin-right: 10px * $i;
+  }
+
+  .mb-#{$i * 10} {
+    margin-bottom: 10px * $i;
+  }
+
+  .ms-#{$i * 10} {
+    margin-left: 10px * $i;
+  }
+  .mx-#{$i * 10} {
+    margin: 10px * $i;
+  }
+  .mx-auto{
+    margin: auto;
+  }
+ .ms-auto{
+    margin-left: auto;
+  }
+  .me-auto{
+    margin-right: auto;
+  }
+  .mt-auto{
+    margin-top: auto;
+  }
+  .mb-auto{
+    margin-bottom: auto;
+  }
+  .pt-#{$i * 10} {
+    padding-top: 10px * $i;
+  }
+
+  .pe-#{$i * 10} {
+    padding-right: 10px * $i;
+  }
+
+  .pb-#{$i * 10} {
+    padding-bottom: 10px * $i;
+  }
+
+  .ps-#{$i * 10} {
+    padding-left: 10px * $i;
+  }
+  .px-#{$i * 10} {
+    padding: 10px * $i;
+  }
+
+  .px-auto{
+    padding: auto;
+  }
+  .pt-auto{
+    padding-top: auto;
+  }
+  .pe-auto{
+    padding-right: auto;
+  }
+  .pb-auto{
+    padding-bottom: auto;
+  }
+  .ps-auto{
+    padding-left: auto;
+  }
+}
+
+
+
