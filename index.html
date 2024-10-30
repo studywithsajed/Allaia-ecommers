@@ -16,19 +16,25 @@
 
 </head>
 <body>
+  <!-- PreLoader  -->
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+  <!-- /PreLoader  -->
+
   <!-- Header Top Area  -->
   <div class="header-top-area pt-10 pb-10">
     <div class="container">
       <div class="row items-center">
         <div class="col-md-3 col-12">
-          <div class="logo text-center">
+          <div class="logo ">
            <a href="#">
              <img src="assets/img/logo.svg" alt="">
             </a>
           </div>
         </div>
         <div class="col-md-7 ">
-          <ul class="menu  d-flex justify-center flex-wrap">
+          <ul class="menu  d-flex justify-center ">
             <li class="menu-item mx-auto"><a href="#" class="text-uppercase fw-700">home </a></li>
             <li class="menu-item mx-auto position-relative angle-down"><a href="#" class="text-uppercase fw-700">pages </a>
               <div class="big-dropdown d-flex ">
@@ -81,17 +87,26 @@
   <!-- /Header Top Area  -->
 
   <!-- Main Header  Area  -->
-   <header class="header-area pt-20 pb-20">
+   <header class="header-area pt-10 pb-10">
     <div class="container">
       <div class="row items-center">
         <div class="col-md-3">
-          <div class="catagories togle-bar-btn ">
-            <i class="fa-solid fa-bars"></i>
-            <i class="fa-solid fa-xmark cross-btn"></i>
+          <div class="catagories togle-bar-btn items-center d-flex">
+            <i class="fa-solid fa-bars bars-btn"></i>
+            <span class="cata-content text-uppercase ms-20">catagories</span>
           </div>
+          <nav class="nav-menu">
+            <ul>
+              <li class="mt-20"><a href="#" class="text-capitalize">nav menu 1</a></li>
+              <li class="mt-20"><a href="#" class="text-capitalize">nav menu 2</a></li>
+              <li class="mt-20"><a href="#" class="text-capitalize">nav menu 3</a></li>
+              <li class="mt-20"><a href="#" class="text-capitalize">nav menu 4</a></li>
+              <li class="mt-20"><a href="#" class="text-capitalize">nav menu 5</a></li>
+            </ul>
+          </nav>
         </div>
         <div class=" col-md-6">
-          <div class="search-box">
+          <div class="search-box position-relative">
             <input type="text" placeholder="Search Your Products">
           </div>
         </div>
@@ -138,8 +153,10 @@
     </div>
   </div>
 </div>
-
   <!-- /Banner Area  -->
+  <!-- Scroll to Top Button -->
+  <div id="scrollToTop">⬆</div>
+  <!-- /Scroll to Top Button -->
 
     <!-- jQuery Library -->
   <script src="assets/js/jquery.min.js"></script>

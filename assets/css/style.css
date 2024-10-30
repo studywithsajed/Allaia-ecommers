@@ -1254,6 +1254,96 @@ body {
     width: 100%;
   }
 }
+/* Preloader style */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  /* Make sure it's on top of everything else */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Spinner animation */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Hide preloader when the page is loaded */
+body.loaded #preloader {
+  display: none;
+}
+
+/* Scroll Bar  */
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 50%;
+  text-align: center;
+  display: none;
+  /* Initially hidden */
+  cursor: pointer;
+  z-index: 1000;
+  /* Make sure it's on top */
+}
+
+#scrollToTop:hover {
+  color: rgba(173, 6, 6, 0.9254901961);
+}
+
+.nav-menu {
+  display: none;
+  width: 300px;
+  padding: 20px;
+  background-color: #ddd;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-100%);
+  transition: all 0.5s linear;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 9;
+}
+.nav-menu ul li a {
+  color: #000;
+}
+.nav-menu ul li a:hover {
+  background-color: papayawhip;
+  padding: 10px;
+  color: forestgreen;
+}
+
+.active .nav-menu {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  left: 0;
+}
+
 /* color area */
 /*Header Top*/
 .header-top-area {
@@ -1344,15 +1434,77 @@ body {
   background: white;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
 }
+.header-area .catagories .bars-btn {
+  font-size: 31px;
+  line-height: 40px;
+  cursor: pointer;
+}
+.header-area .catagories .cata-content {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+}
+.header-area .catagories .cata-content:hover {
+  color: #0652DD;
+  transition: 0.3s;
+}
+.header-area .catagories .nav-menu {
+  background: #f5f6fa;
+  padding: 10px;
+  width: 100%;
+  height: 100vh;
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  display: block;
+  position: absolute;
+  z-index: 9;
+}
+.header-area .catagories .nav-menu.active {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
 .header-area .search-box::after {
   position: absolute;
   content: "\f002";
   font-family: fontawesome;
+  top: 13px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+.header-area .search-box input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 3px;
+  background-color: #f5f6fa;
+  z-index: -1;
+}
+.header-area .search-box input:focus {
+  border: 1px solid #333;
+}
+.header-area .head-tolls span i {
+  font-size: 30px;
+  cursor: pointer;
+}
+.header-area .head-tolls span i:hover {
+  color: #0652DD;
+  transition: 0.3s;
 }
 
-.header-area {
-  background: #fff;
-  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+.header-area.scrolled {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: 0.3s;
 }
 
 .banner-slider .item {
@@ -1363,7 +1515,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  transform: translateY(100%);
+  transform: translateY(50%);
 }
 .banner-slider .item .banner-content.banner-1 h2 {
   font-size: 55px;
@@ -1392,7 +1544,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateY(100%);
+  transform: translateY(50%);
 }
 .banner-slider .item .banner-content.banner-2 h2 {
   font-size: 55px;
@@ -1421,7 +1573,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(50%, -50%);
+  transform: translate(20%, 50%);
 }
 .banner-slider .item .banner-content.banner-3 h2 {
   font-size: 55px;
