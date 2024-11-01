@@ -44,6 +44,12 @@
             width: 129px;
               li{
               margin-top: 20px;
+              padding: 5px;
+              text-align: center;
+              border-radius: 3px;
+              &:hover {
+                background: $white;
+              }
               a{
                 color: $gray-black;
                 &:hover{

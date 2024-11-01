@@ -98,3 +98,39 @@ body.loaded #preloader {
     left: 0;
   }
    
+.cover-50{
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+.cover{
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.d-inline{
+    display: inline-block;
+}
+.owl-nav {
+  display: none;
+}
+.owl-dots {
+  position: absolute;
+  bottom: 50px;
+  left: 42%;
+}
+
+  .owl-theme .owl-dots .owl-dot span {
+	width: 10px;
+	height: 10px;
+	margin: 5px 7px;
+	background: #ffc107;
+	display: block;
+	transition: opacity .2s ease;
+}     
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background:#df1f3f
+}

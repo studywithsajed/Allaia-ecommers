@@ -14,7 +14,7 @@ $grid_breakpoint_xxl: 1400px;
 $grid_breakpoint_xl: 1200px;
 $grid_breakpoint_lg: 992px;
 $grid_breakpoint_md: 768px;
-$grid_breakpoint_sm: 576px;
+$grid_breakpoint_sm: 767px;
 
 
 @media (max-width: $grid_breakpoint_sm) {
@@ -27,11 +27,14 @@ $grid_breakpoint_sm: 576px;
             width: (100/12) * $i * 1%;
         }
     }
+    .menu {
+	    display: none;
+    }
 }
 
 @media (min-width: $grid_breakpoint_md) {
   .container {
-    max-width: 720px;
+    width: 720px;
   }
 
   @for $i from 1 through 12 {
@@ -39,11 +42,12 @@ $grid_breakpoint_sm: 576px;
             width: (100/12) * $i * 1%;
         }
     }
+    
 }
 
 @media (min-width: $grid_breakpoint_lg) {
   .container {
-    max-width: 960px;
+    width: 960px;
   }
 
   @for $i from 1 through 12 {
@@ -55,7 +59,7 @@ $grid_breakpoint_sm: 576px;
 
 @media (min-width: $grid_breakpoint_xl) {
   .container {
-    max-width: 1140px;
+    width: 1140px;
   }
 
   @for $i from 1 through 12 {
@@ -67,7 +71,7 @@ $grid_breakpoint_sm: 576px;
 
 @media (min-width: $grid_breakpoint_xxl) {
   .container {
-    max-width: 1320px;
+    width: 1320px;
   }
 
   @for $i from 1 through 12 {
