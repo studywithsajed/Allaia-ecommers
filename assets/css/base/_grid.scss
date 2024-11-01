@@ -15,26 +15,56 @@ $grid_breakpoint_xl: 1200px;
 $grid_breakpoint_lg: 992px;
 $grid_breakpoint_md: 768px;
 $grid_breakpoint_sm: 767px;
+$grid_breakpoint_xs: 575.98px;
+
+
+// @media (max-width: $grid_breakpoint_xs) {
+//   .container {
+//     max-width: 100%;
+//   }
+
+//   .menu{
+//     // display: none;
+//   }
+//   .cover{
+//     // height: 50vh;
+//   }
+//   @for $i from 1 through 12 {
+//         .col-#{$i} {
+//             width: (100/12) * $i * 1%;
+//             padding: 0 15px;
+//         }
+//     }
+
+// }
 
 
 @media (max-width: $grid_breakpoint_sm) {
   .container {
-    width: 100%;
+    max-width: 100%;
   }
-
+  .menu{
+    display: none;
+  }
+  .search-box{
+    display: none;
+    
+  }
+  .single-feaure {
+	border: 2px solid #fff;
+  }
+  
   @for $i from 1 through 12 {
         .col-#{$i} {
             width: (100/12) * $i * 1%;
         }
     }
-    .menu {
-	    display: none;
-    }
+    
 }
 
 @media (min-width: $grid_breakpoint_md) {
   .container {
-    width: 720px;
+    max-width: 720px;
   }
 
   @for $i from 1 through 12 {
@@ -47,7 +77,7 @@ $grid_breakpoint_sm: 767px;
 
 @media (min-width: $grid_breakpoint_lg) {
   .container {
-    width: 960px;
+    max-width: 960px;
   }
 
   @for $i from 1 through 12 {
@@ -59,7 +89,7 @@ $grid_breakpoint_sm: 767px;
 
 @media (min-width: $grid_breakpoint_xl) {
   .container {
-    width: 1140px;
+    max-width: 1140px;
   }
 
   @for $i from 1 through 12 {
@@ -71,7 +101,7 @@ $grid_breakpoint_sm: 767px;
 
 @media (min-width: $grid_breakpoint_xxl) {
   .container {
-    width: 1320px;
+     max-width: 1320px;
   }
 
   @for $i from 1 through 12 {
@@ -80,3 +110,6 @@ $grid_breakpoint_sm: 767px;
         }
     }
 }
+
+
+

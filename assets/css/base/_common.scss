@@ -75,6 +75,22 @@ body.loaded #preloader {
     pointer-events: none;
     z-index: 9;
     ul{
+        input {
+            width: 100%;
+            padding: 9px;
+            outline: none;
+            border: none;
+            position: relative;
+        }
+        i {
+            position: absolute;
+            top: 21px;
+            background: #333;
+            padding: 9px;
+            color: #fff;
+            cursor: pointer;
+            right: 67px;
+        }
         li{
             a{
                 color: #000;

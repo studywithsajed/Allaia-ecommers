@@ -1051,7 +1051,16 @@ body {
 
 @media (max-width: 767px) {
   .container {
-    width: 100%;
+    max-width: 100%;
+  }
+  .menu {
+    display: none;
+  }
+  .search-box {
+    display: none;
+  }
+  .single-feaure {
+    border: 2px solid #fff;
   }
   .col-1 {
     width: 8.3333333333%;
@@ -1089,13 +1098,10 @@ body {
   .col-12 {
     width: 100%;
   }
-  .menu {
-    display: none;
-  }
 }
 @media (min-width: 768px) {
   .container {
-    width: 720px;
+    max-width: 720px;
   }
   .col-md-1 {
     width: 8.3333333333%;
@@ -1136,7 +1142,7 @@ body {
 }
 @media (min-width: 992px) {
   .container {
-    width: 960px;
+    max-width: 960px;
   }
   .col-lg-1 {
     width: 8.3333333333%;
@@ -1177,7 +1183,7 @@ body {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1140px;
+    max-width: 1140px;
   }
   .col-xl-1 {
     width: 8.3333333333%;
@@ -1218,7 +1224,7 @@ body {
 }
 @media (min-width: 1400px) {
   .container {
-    width: 1320px;
+    max-width: 1320px;
   }
   .col-xxl-1 {
     width: 8.3333333333%;
@@ -1329,6 +1335,22 @@ body.loaded #preloader {
   visibility: hidden;
   pointer-events: none;
   z-index: 9;
+}
+.nav-menu ul input {
+  width: 100%;
+  padding: 9px;
+  outline: none;
+  border: none;
+  position: relative;
+}
+.nav-menu ul i {
+  position: absolute;
+  top: 21px;
+  background: #333;
+  padding: 9px;
+  color: #fff;
+  cursor: pointer;
+  right: 67px;
 }
 .nav-menu ul li a {
   color: #000;
@@ -1671,6 +1693,9 @@ body.loaded #preloader {
   color: #0652DD;
 }
 
+.fixed-banner {
+  background-attachment: fixed;
+}
 .fixed-banner .banner-content h2 {
   font-size: 55px;
   line-height: 62px;
@@ -1692,4 +1717,14 @@ body.loaded #preloader {
 .fixed-banner .banner-content .small-btn:hover {
   background: #ffc107;
   color: #333;
+}
+.fixed-banner .banner-content span {
+  font-size: 39px;
+  font-weight: 700;
+  color: white;
+}
+.fixed-banner .banner-content span del {
+  color: #f2f2f2;
+  font-weight: 500;
+  font-size: 24px;
 }/*# sourceMappingURL=style.css.map */
