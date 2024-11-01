@@ -1,0 +1,50 @@
+
+/* Extra small: Full width for screens less than 576px */
+@media (max-width: 575.98px) {
+  .container {
+    max-width: 100%;
+  }
+
+}
+
+/* Small: Up to 540px for screens 576px and up */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+
+}
+
+/* Medium: Up to 720px for screens 768px and up */
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .menu{
+    display: none;
+  }
+  .search-box {
+	display: none;
+ }
+}
+
+/* Large: Up to 960px for screens 992px and up */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Extra Large: Up to 1140px for screens 1200px and up */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* XX-Large: Up to 1320px for screens 1400px and up */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
