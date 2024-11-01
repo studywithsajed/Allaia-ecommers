@@ -14,34 +14,34 @@ $grid_breakpoint_xxl: 1400px;
 $grid_breakpoint_xl: 1200px;
 $grid_breakpoint_lg: 992px;
 $grid_breakpoint_md: 768px;
-$grid_breakpoint_sm: 767px;
+$grid_breakpoint_sm: 576px;
 $grid_breakpoint_xs: 575.98px;
 
 
-// @media (max-width: $grid_breakpoint_xs) {
-//   .container {
-//     max-width: 100%;
-//   }
-
-//   .menu{
-//     // display: none;
-//   }
-//   .cover{
-//     // height: 50vh;
-//   }
-//   @for $i from 1 through 12 {
-//         .col-#{$i} {
-//             width: (100/12) * $i * 1%;
-//             padding: 0 15px;
-//         }
-//     }
-
-// }
-
-
-@media (max-width: $grid_breakpoint_sm) {
+@media (max-width: $grid_breakpoint_xs) {
   .container {
     max-width: 100%;
+  }
+
+  .menu{
+    // display: none;
+  }
+  .cover{
+    // height: 50vh;
+  }
+  @for $i from 1 through 12 {
+        .col-#{$i} {
+            width: (100/12) * $i * 1%;
+            padding: 0 15px;
+        }
+    }
+
+}
+
+
+@media (min-width: $grid_breakpoint_sm) {
+  .container {
+    max-width: 540px;
   }
   .menu{
     display: none;
@@ -55,7 +55,7 @@ $grid_breakpoint_xs: 575.98px;
   }
   
   @for $i from 1 through 12 {
-        .col-#{$i} {
+        .col-sm-#{$i} {
             width: (100/12) * $i * 1%;
         }
     }

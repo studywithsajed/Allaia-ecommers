@@ -1,0 +1,45 @@
+.blogs{
+  padding: 15px;
+    .blog-img{
+      position: relative;
+      // width: 300px;
+      .icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: orange;
+        padding: 9px 8px;
+        font-weight: 700;
+        color: #fff;
+        text-transform: capitalize;
+        span {
+          display: block;
+        }
+      }
+    }
+    .blog-content {
+      padding-left: 15px;
+      // width: 400px;
+      span {
+        display: block;
+        font-size: 13px;
+        color: $gray-black;
+      }
+      a {
+        display: inline-block;
+        color: $black;
+        padding: 10px 0;
+        font-size: 25px;
+        &:hover{
+          color: $sky-blue;
+        }
+      }
+      p{
+        color: $gray-black;
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+}
+
+
