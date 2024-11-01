@@ -4,14 +4,16 @@
   .container {
     max-width: 100%;
   }
-.nav-menu {
-	/* display: none; */
-	width: 100%;
-	height: auto;
-}
-.head-tolls span {
-	margin: 0;
-}
+  .nav-menu {
+    width: 100%;
+    height: auto;
+  }
+  .head-tolls span {
+    margin: 0;
+  }
+  .cata-content {
+    display: none;
+  }
 }
 
 /* Small: Up to 540px for screens 576px and up */
@@ -33,8 +35,8 @@
   .search-box {
     display: none;
   }
-  .single-feaure {
-	  border: 3px solid #fff;
+  .feaure-area .single-feaure {
+	  margin: 10px 0;
   }
 }
 
