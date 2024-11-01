@@ -4,7 +4,14 @@
   .container {
     max-width: 100%;
   }
-
+.nav-menu {
+	/* display: none; */
+	width: 100%;
+	height: auto;
+}
+.head-tolls span {
+	margin: 0;
+}
 }
 
 /* Small: Up to 540px for screens 576px and up */
@@ -16,7 +23,7 @@
 }
 
 /* Medium: Up to 720px for screens 768px and up */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     max-width: 720px;
   }
@@ -24,9 +31,13 @@
     display: none;
   }
   .search-box {
-	display: none;
- }
+    display: none;
+  }
+  .single-feaure {
+	  border: 3px solid #fff;
+  }
 }
+
 
 /* Large: Up to 960px for screens 992px and up */
 @media (min-width: 992px) {
