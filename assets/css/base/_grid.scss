@@ -35,7 +35,9 @@ $grid_breakpoint_xs: 575.98px;
   .head-tolls span {
     margin-left:  10px;
   }
-  
+  .nav-menu {
+    width: 100% !important;
+  }
 
   @for $i from 1 through 12 {
         .col-#{$i} {

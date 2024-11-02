@@ -1,31 +1,35 @@
 /*Header Top*/
 .header-top-area {
 	background: $sky-blue;
-	padding: 20px;
   .menu{
     .menu-item{
         .small-menu{
-          position: absolute;
-          background: $gray-white;
-          top:0;
-          left: 0;
-          padding: 20px;
-          width: 200px;
-          visibility: hidden;
-          opacity: 0;
-          z-index: 99;
-          transition: .3s;
-          box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
-          li{
-            margin-top: 15px;
-            a{
-              color: $gray-black ;
-              &:hover{
-                color: $sky-blue;
+            position: absolute;
+            background: $gray-white;
+            top:0;
+            left: 0;
+            padding: 20px;
+            max-width: 600px;
+            visibility: hidden;
+            opacity: 0;
+            z-index: 99;
+            transition: .3s;
+            box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+            ul{
+              width: 90px;
+              li{
+                margin-top: 15px;
+                a{
+                  color: $gray-black ;
+                  padding: 10px;
+                  border-radius: 4px;
+                  &:hover{
+                    color: $sky-blue;
+                  }
+                }
               }
             }
           }
-        }
         
       .big-dropdown {
           position: absolute;
@@ -74,6 +78,7 @@
       a{
         position: relative;
         color: $white;
+        font-size: 13px;
       }
     }
     .angle-down{

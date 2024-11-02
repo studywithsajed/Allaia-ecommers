@@ -1065,6 +1065,9 @@ body {
   .head-tolls span {
     margin-left: 10px;
   }
+  .nav-menu {
+    width: 100% !important;
+  }
   .col-1 {
     width: 8.3333333333%;
     padding: 0 15px;
@@ -1386,7 +1389,7 @@ body.loaded #preloader {
   display: none;
   width: 300px;
   padding: 20px;
-  background-color: #ddd;
+  background-color: white;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -1404,21 +1407,23 @@ body.loaded #preloader {
   outline: none;
   border: none;
   position: relative;
+  background-color: #f2f2f2;
 }
 .nav-menu ul i {
   position: absolute;
   top: 21px;
   background: #333;
   padding: 9px;
-  color: white;
+  color: #fff;
   cursor: pointer;
 }
 .nav-menu ul li a {
+  padding: 10px;
+  border-radius: 4px;
   color: #000;
 }
 .nav-menu ul li a:hover {
-  background-color: white;
-  padding: 10px;
+  background-color: #ddd;
   color: #0652DD;
 }
 
@@ -1474,7 +1479,6 @@ body.loaded #preloader {
 /*Header Top*/
 .header-top-area {
   background: #0652DD;
-  padding: 20px;
 }
 .header-top-area .menu .menu-item .small-menu {
   position: absolute;
@@ -1482,20 +1486,25 @@ body.loaded #preloader {
   top: 0;
   left: 0;
   padding: 20px;
-  width: 200px;
+  max-width: 600px;
   visibility: hidden;
   opacity: 0;
   z-index: 99;
   transition: 0.3s;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
 }
-.header-top-area .menu .menu-item .small-menu li {
+.header-top-area .menu .menu-item .small-menu ul {
+  width: 90px;
+}
+.header-top-area .menu .menu-item .small-menu ul li {
   margin-top: 15px;
 }
-.header-top-area .menu .menu-item .small-menu li a {
+.header-top-area .menu .menu-item .small-menu ul li a {
   color: #333;
+  padding: 10px;
+  border-radius: 4px;
 }
-.header-top-area .menu .menu-item .small-menu li a:hover {
+.header-top-area .menu .menu-item .small-menu ul li a:hover {
   color: #0652DD;
 }
 .header-top-area .menu .menu-item .big-dropdown {
@@ -1544,6 +1553,7 @@ body.loaded #preloader {
 .header-top-area .menu .menu-item a {
   position: relative;
   color: white;
+  font-size: 13px;
 }
 .header-top-area .menu .angle-down::after {
   position: absolute;
