@@ -1053,6 +1053,18 @@ body {
   .container {
     max-width: 100%;
   }
+  .menu {
+    display: none;
+  }
+  .cata-content {
+    margin-left: 7px;
+  }
+  .search-box {
+    display: none;
+  }
+  .head-tolls span {
+    margin-left: 10px;
+  }
   .col-1 {
     width: 8.3333333333%;
     padding: 0 15px;
@@ -1105,6 +1117,12 @@ body {
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
+  }
+  .cata-content {
+    display: none;
+  }
+  .single-feaure {
+    margin: 7px 2px !important;
   }
   .col-sm-1 {
     width: 8.3333333333%;
@@ -1532,7 +1550,7 @@ body.loaded #preloader {
   content: "\f107";
   font-family: fontawesome;
   top: -3px;
-  right: -21px;
+  right: -15px;
   color: white;
 }
 .header-top-area .contact-head a {
@@ -1817,6 +1835,9 @@ body.loaded #preloader {
 .footer-area {
   background: #172134;
   color: #f2f2f2;
+}
+.footer-area .footers h4 {
+  font-size: 24px;
 }
 .footer-area .footers ul li a {
   display: inline-block;

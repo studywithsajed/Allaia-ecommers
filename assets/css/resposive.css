@@ -21,11 +21,19 @@
   .container {
     max-width: 540px;
   }
+  .header-top-area .menu .angle-down::after {
+	position: absolute;
+	content: "";
+	font-family: fontawesome;
+	top: -3px;
+	right: -21px;
+	color: white;
+}
 
 }
 
 /* Medium: Up to 720px for screens 768px and up */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .container {
     max-width: 720px;
   }

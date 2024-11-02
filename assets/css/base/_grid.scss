@@ -22,8 +22,21 @@ $grid_breakpoint_xs: 575.98px;
   .container {
     max-width: 100%;
   }
-
+  .menu {
+    display: none;
+  }
+  .cata-content {
+    margin-left: 7px;
+  }
+  .search-box {
+    display: none;
+  }
   
+  .head-tolls span {
+    margin-left:  10px;
+  }
+  
+
   @for $i from 1 through 12 {
         .col-#{$i} {
             width: (100/12) * $i * 1%;
@@ -39,6 +52,12 @@ $grid_breakpoint_xs: 575.98px;
     max-width: 540px;
   }
   
+  .cata-content {
+    display: none;
+  }
+  .single-feaure {
+    margin: 7px 2px !important;
+  }
   
   @for $i from 1 through 12 {
         .col-sm-#{$i} {
